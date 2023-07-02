@@ -33,8 +33,9 @@ public class OrderClient extends Client {
 
         return given()
                 .spec(spec())
+                .queryParam("track", id)
                 .when()
-                .put(ORDER_API + "cancel?track=" + id)
+                .put(ORDER_API + "cancel")
                 .then().log().all();
     }
 }

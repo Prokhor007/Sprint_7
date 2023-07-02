@@ -23,6 +23,9 @@ public class OrderCreate {
         this.color = color;
     }
 
+    public OrderCreate() {
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -89,9 +92,5 @@ public class OrderCreate {
 
     public String[] getColor() {
         return color;
-    }
-
-    public void setColor(String[] color) {
-        this.color = color;
     }
 }
